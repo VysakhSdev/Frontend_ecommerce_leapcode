@@ -126,7 +126,7 @@ const Home = () => {
           </div>
           <h2 className="text-xl font-bold text-gray-900">No products found</h2>
           <p className="text-gray-500 max-w-xs text-center mt-2">
-            We couldn't find any products matching <span className="font-bold text-indigo-600">"{searchTerm}"</span>. Try a different keyword!
+            We couldn't find any products matching ..
           </p>
           <button
             onClick={() => setSearchTerm('')}

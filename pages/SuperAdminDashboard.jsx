@@ -215,11 +215,18 @@ const SuperAdminDashboard = () => {
         products.length > 0 ? (
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {products.map((p) => (
+
+              console.log("Product item:", p),
               <div key={p.id} className="bg-white p-5 rounded-2xl border shadow-sm hover:shadow-md transition-shadow group">
                 <div className="flex justify-between items-start mb-4">
                   <div className="h-12 w-12 rounded-xl bg-gray-100 overflow-hidden border">
-                    <img src={p.imageUrl || 'https://via.placeholder.com/50'} alt={p.name} className="w-full h-full object-cover" />
-                  </div>
+  <img
+    src={p?.imageUrl || 'https://placehold.co/50x50'}
+    alt={p?.name}
+    className="w-full h-full object-cover"
+  />
+</div>
+
                   <div className="flex gap-2 opacity-0 group-hover:opacity-100 transition-opacity">
                     <button onClick={() => { setEditingProduct(p); setIsFormOpen(true); }} className="p-2 hover:bg-indigo-50 text-indigo-600 rounded-lg"><Edit size={16} /></button>
                     <button onClick={() => handleDeleteProduct(p.id)} className="p-2 hover:bg-red-50 text-red-600 rounded-lg"><Trash2 size={16} /></button>
