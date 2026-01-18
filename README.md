@@ -1,44 +1,55 @@
-Leapcode Frontend
-The client-side React application for the Product & Cart Management System, featuring Role-Based Access Control (RBAC).
+# Leapcode Frontend
 
-**Features**
-Authentication: Secure login screen using JWT-based authentication.
+The client-side React application for the Product & Cart Management System, featuring Role-Based Access Control (RBAC). This project serves as the frontend interface for managing products, users, and shopping carts with distinct permissions for Superadmins, Admins, and Users.
 
-RBAC Dashboard: Dynamic views for Superadmins, Admins, and Users.
+## Features
 
-Product Management: CRUD operations for products based on role permissions.
+- **Authentication**: Secure login screen using JWT-based authentication.
+- **RBAC Dashboard**: Dynamic views tailored for Superadmins, Admins, and Users.
+- **Product Management**: Full CRUD operations for products based on role permissions.
+- **Cart System**: User-specific cart management (Add, Update, Remove items).
+- **Admin View**: Specialized "Eye" icon in user lists allowing admins to view live user carts.
 
-Cart System: User-specific cart management (Add, Update, Remove).
+## Tech Stack
 
-Admin View: Specialized "Eye" icon in user lists to view live user carts.
+- **Framework**: [React](https://reactjs.org/) (via [Vite](https://vitejs.dev/))
+- **Styling**: [Tailwind CSS](https://tailwindcss.com/)
+- **Icons**: [Lucide-React](https://lucide.dev/)
+- **API Client**: [Axios](https://axios-http.com/) (with interceptors for JWT)
+- **Notifications**: [React Hot Toast](https://react-hot-toast.com/)
 
-**Tech Stack**
-Framework: React (Vite).
+## Prerequisites
 
-Styling: Tailwind CSS.
+Before you begin, ensure you have met the following requirements:
 
-Icons: Lucide-React.
+- **Node.js**: v16 or higher recommended
+- **npm**: v7 or higher
 
-API Client: Axios with interceptors for JWT.
+## Installation
 
-Notifications: React Hot Toast.
+1. **Install dependencies**
 
-**Installation**
+   ```bash
+   npm install
+   ```
 
-**Install dependencies**
+## 🔧 Configuration
 
-Bash
+Create a `.env` file in the root directory of the project to configure the API connection.
 
-npm install
-
-**Environment Variables Create a .env file in the root directory:**
-
-Code snippet
-
+```env
 VITE_API_BASE_URL=http://localhost:5000/api
+```
 
-**Run the application**
+> **Note**: Ensure the backend server is running and accessible at the specified URL.
 
-Bash
+##  Running the Application
 
+**Start the development server:**
+
+```bash
 npm run dev
+```
+
+The application will typically be available at `http://localhost:5173`.
+
