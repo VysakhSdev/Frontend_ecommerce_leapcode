@@ -1,0 +1,5 @@
+{
+  "name": "Nexus E-Commerce",
+  "description": "A robust role-based e-commerce platform featuring public product galleries, persistent shopping carts for users, and tiered administrative dashboards for inventory and user management.",
+  "requestFramePermissions": []
+}
